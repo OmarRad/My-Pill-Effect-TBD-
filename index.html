@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" type="text/css" href="main.css">
+	<title>My Pill Effect</title>
+</head>
+<body>
+	<ul class="navbar">
+		<li class="navbar"><a href="index.html" style="font-size: 20px">My Pill Effect</a>
+		<li class="navbar"><a href="index.html">Home</a></li>
+		<li class="navbar"><a href="contact.html">Contact</a></li>
+		<li class="navbar"><a href="about.html">About</a></li>
+	</ul>
+	<p>This website allows you to find out about any potential harmful effects caused by your medications.<p>
+	<p>Please enter your Prescriptions and dosages.</p>
+	<form action="/action_page.php">
+		<!-- This is indicates where its being submitted to. Add a method="post" if we're sending lots of data, URL is limited to 3000 characters-->
+		Prescription 1:
+		<input type="text" name="Prescription 1"><br>
+		<select name="mass/volume unit" class="form">
+			<option value="">mcg</option> <!-- That's micrograms -->
+			<option value="mg">mg</option>
+			<option value="g">g</option>
+			<option value="kg">kg</option>
+			<option value="mL">mL</option>
+			<option value="L">L</option>
+			<option value="">mm</option>
+			<option value="">cm</option>
+			<option value="">m</option>
+			<option value="drops">drops</option>
+		</select>
+		<input type="text" name="number of times">
+		times per
+		<select name="time unit">
+			<option value="day">hour</option>
+			<option value="hour">day</option>
+			<option value="week">week</option>
+		</select><br><br>
+		Prescription 2:
+		<input type="text" name="Prescription 2"><br>
+		<select name="mass/volume unit" class="form">
+			<option value="">mcg</option> <!-- That's micrograms -->
+			<option value="mg">mg</option>
+			<option value="g">g</option>
+			<option value="kg">kg</option>
+			<option value="mL">mL</option>
+			<option value="L">L</option>
+			<option value="">mm</option>
+			<option value="">cm</option>
+			<option value="">m</option>
+			<option value="drops">drops</option>
+		</select>
+		<input type="text" name="number of times">
+		times per
+		<select name="time unit">
+			<option value="day">hour</option>
+			<option value="hour">day</option>
+			<option value="week">week</option>
+		</select><br><br>
+<!-- Prescription 1, Dosage, (mass unit dropdown), (time unit dropdown)
+Prescription 2, Dosage, (mass unit dropdown), (time unit dropdown), (plus sign for more prescriptions) -->
+		<input type="submit" name="">
+	</form>
+</body>
+</html>
