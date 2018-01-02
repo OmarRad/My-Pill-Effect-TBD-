@@ -1,0 +1,13 @@
+.container {
+	height: 300px;
+	width: 1000px;
+	background-color: white;
+	border: 1px	solid #3A2449;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	margin-left: auto;
+	margin-right: auto;
+}

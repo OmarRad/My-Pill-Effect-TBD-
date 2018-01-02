@@ -3,24 +3,30 @@ ul.navbar {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333333;
+	background-color: #A1E8AF;
 }
 li.navbar {
-	float: left;
+	float: right;
+	font-size: 40px;
 }
+
+li.logo {
+	float: left;
+	font-size: 40px;
+}
+
 li a {
 	display: block;
-	color: white;
+	color: #372772;
 	text-align: center;
 	padding: 16px;
 	text-decoration: none;
 }
 li a:hover {
-	background-color: #1111111;
+	background-color: #94C595;
+	color: #3A2449;
 }
-/*p.form {
-	display: inline;
-}*/
+
 select {
 	float: left;
 }
@@ -28,4 +34,3 @@ select {
 select.form {
 	display: inline;
 }
-
