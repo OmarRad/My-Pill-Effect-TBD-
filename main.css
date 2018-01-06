@@ -1,9 +1,16 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
 ul.navbar {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #A1E8AF;
+	font-variant: small-caps;
 }
 li.navbar {
 	float: right;
@@ -13,6 +20,8 @@ li.navbar {
 li.logo {
 	float: left;
 	font-size: 40px;
+	font-variant: small-caps;
+	letter-spacing: 4px;
 }
 
 li a {
@@ -22,15 +31,62 @@ li a {
 	padding: 16px;
 	text-decoration: none;
 }
-li a:hover {
+li.navbar a:hover {
 	background-color: #94C595;
 	color: #3A2449;
+	text-shadow: #3A2449 1px 1px 1px;
+	text-decoration: underline; /*Figure out how to make it an animation: */
+	/*animation:*/
 }
 
 select {
 	float: left;
+	height: 29px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
 }
 
 select.form {
 	display: inline;
+}
+
+.boxed {
+	border: 2px solid #372772;
+	padding: 20px;
+}
+.textt {
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	border: 2px solid #3A2449;
+	width: 600px;
+}
+
+.text {
+	font-size: 30px;
+	padding-left: 20px;
+}
+
+input {
+	height: 23px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+}
+
+input.submit {
+	height: 30px;
+	margin-left: 265px;
+}
+
+.results {
+	font-size: 20px;
+	padding-left: 20px;
+	max-width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.Pre {
+	padding-left: 165px;
 }

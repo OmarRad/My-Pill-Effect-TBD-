@@ -6,7 +6,10 @@
 	 #747C92
 	 #372772
 	 #3A2449 -->
-<head><link rel="stylesheet" type="text/css" href="main.css">
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 	<title>My Pill Effect</title>
 </head>
 <body>
@@ -18,17 +21,17 @@
 			<li class="navbar"><a href="index.html">Home</a></li>
 		</ul>
 	</div>
-	<div>
+	<div class="text">
 		<p>This website allows you to find out about any potential harmful effects caused by your medications.</p>
 		<p>Please enter your prescriptions and dosages.</p>
 	</div>
-	<form action="/action_page.php" method="post">
+	<form action="/action_page.php" method="post" class="textt">
 		<!-- This is indicates where its being submitted to. Add a method="post" if we're sending lots of data, URL is limited to 3000 characters-->
-		<div>
-			Prescription 1:
+		<div class="Pre">
+			Prescription 1:     
 			<input type="text" name="Prescription 1"><br>
 			<div style="float: left; margin-right: 7px">
-				<select name="mass/volume unit" class="form" style="height: 21px">
+				<select name="mass/volume unit" class="form">
 					<option value="">mcg</option> <!-- That's micrograms -->
 					<option value="mg">mg</option>
 					<option value="g">g</option>
@@ -40,22 +43,22 @@
 					<option value="m">m</option>
 					<option value="drops">drops</option>
 				</select>
-				<input type="text" name="number of times" style="width: 50px">
+				<input type="text" name="number of times" placeholder="#" style="width: 50px">
 				times per
 			</div>
 			<div style = "display: inline-block">
-				<select name="time unit" style="height: 21px">
+				<select name="time unit">
 					<option value="day">hour</option>
 					<option value="hour">day</option>
 					<option value="week">week</option>
 				</select><br><br>
 			</div>
 		</div>
-		<div>
+		<div class="Pre">
 			Prescription 2:
 			<input type="text" name="Prescription 2"><br>
 			<div style="float: left; margin-right: 7px">
-				<select name="mass/volume unit" class="form" style="height: 21px">
+				<select name="mass/volume unit" class="form">
 					<option value="mcg">mcg</option> <!-- That's micrograms -->
 					<option value="mg">mg</option>
 					<option value="g">g</option>
@@ -67,11 +70,11 @@
 					<option value="m">m</option>
 					<option value="drops">drops</option>
 				</select>
-				<input type="text" name="number of times" style="width:50px">
+				<input type="text" name="number of times" placeholder="#" style="width:50px">
 				times per
 			</div>
 			<div style = "display: inline-block;">
-				<select name="time unit" style="height: 21px">
+				<select name="time unit"">
 					<option value="day">hour</option>
 					<option value="hour">day</option>
 					<option value="week">week</option>
@@ -80,7 +83,13 @@
 		</div>
 <!-- Prescription 1, Dosage, (mass unit dropdown), (time unit dropdown)
 Prescription 2, Dosage, (mass unit dropdown), (time unit dropdown), (plus sign for more prescriptions) -->
-		<input type="submit" name="">
+		<input type="submit" name="" class="submit">
 	</form>
+	<div class="results">
+		<h1>Results:</h1>
+		<div class="boxed">
+  			These are the results:
+		</div>
+	</div>
 </body>
 </html>
